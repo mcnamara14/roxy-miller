@@ -20,9 +20,9 @@ const styles = {
     "& li": {
       width: "fit-content",
       display: "inline",
-      marginRight: 40,
+      marginLeft: 40,
       fontFamily: "Open Sans",
-      fontSize: 12,
+      fontSize: 14,
       fontWeight: 700,
       "&:hover": {
         cursor: "pointer",

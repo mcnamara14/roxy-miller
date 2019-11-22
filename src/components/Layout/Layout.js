@@ -11,7 +11,7 @@ const styles = {
   page: {
     background: "#f4f4f4",
     padding: "0 50px",
-    height: "100vh",
+    height: "100%",
   },
   container: {
     margin: `0 auto`,
