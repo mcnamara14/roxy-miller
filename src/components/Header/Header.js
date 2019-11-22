@@ -3,7 +3,7 @@ import headerLogo from "src/images/header-logo.png"
 import withStyles from "@material-ui/core/styles/withStyles"
 import { Link } from "gatsby"
 
-const styles = {
+const styles = theme => ({
   logoLink: {
     gridColumn: "1/3",
     alignSelf: "center",
@@ -15,8 +15,15 @@ const styles = {
     gridColumn: "3/13",
     display: "grid",
     justifyContent: "end",
+    [theme.breakpoints.down("sm")]: {
+      gridColumn: "1/13",
+      justifyContent: "start",
+      marginTop: 30,
+    },
   },
   navRoot: {
+    margin: 0,
+    padding: 0,
     "& li": {
       width: "fit-content",
       display: "inline",
@@ -24,6 +31,15 @@ const styles = {
       fontFamily: "Open Sans",
       fontSize: 14,
       fontWeight: 700,
+      [theme.breakpoints.down("sm")]: {
+        marginRight: 40,
+        marginLeft: 0,
+      },
+      [theme.breakpoints.down("xs")]: {
+        marginRight: 20,
+        marginLeft: 0,
+        lineHeight: "28px",
+      },
       "&:hover": {
         cursor: "pointer",
         transition: "color .2s cubic-bezier(.72,.16,.345,.875)",
@@ -33,7 +49,7 @@ const styles = {
       },
     },
   },
-}
+})
 
 const Header = ({ classes }) => {
   return (

@@ -7,16 +7,18 @@ import "./layout.css"
 import { ThemeProvider } from "@material-ui/styles"
 import theme from "src/constants/roxymillerTheme"
 
-const styles = {
+const styles = theme => ({
   page: {
     background: "#f4f4f4",
     padding: "0 50px",
     height: "100%",
+    [theme.breakpoints.down("xs")]: {
+      padding: "0 20px",
+    },
   },
   container: {
     margin: `0 auto`,
     maxWidth: 1200,
-    padding: `0px 1.0875rem 1.45rem`,
     paddingTop: 50,
     boxSizing: "border-box",
     width: "100%",
@@ -29,7 +31,7 @@ const styles = {
     display: "grid",
     gridColumn: "1/13",
   },
-}
+})
 
 const Layout = ({ children, classes }) => {
   const data = useStaticQuery(graphql`
