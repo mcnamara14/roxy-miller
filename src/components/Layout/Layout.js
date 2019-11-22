@@ -9,12 +9,18 @@ const styles = {
   page: {
     background: "#f4f4f4",
     padding: "0 50px",
+    height: "100vh",
   },
   container: {
     margin: `0 auto`,
     maxWidth: 1200,
     padding: `0px 1.0875rem 1.45rem`,
     paddingTop: 50,
+    boxSizing: "border-box",
+    width: "100%",
+    height: "100%",
+    gridTemplateColumns: "repeat(12, 1fr)",
+    display: "grid",
   },
 }
 
@@ -34,11 +40,6 @@ const Layout = ({ children, classes }) => {
       <div className={classes.container}>
         <Header />
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
       </div>
     </div>
   )
