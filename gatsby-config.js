@@ -28,6 +28,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-material-ui`,
+      options: {
+        // Add any options here
+      },
+    },
+    {
       resolve: "gatsby-plugin-root-import",
       options: {
         src: path.join(__dirname, "src"),
