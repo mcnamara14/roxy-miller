@@ -8,7 +8,7 @@ import SEO from "src/components/seo"
 const Homepage = () => (
   <Layout>
     <SEO title="Home" />
-    <Link to="/page-2/">Go to page 2</Link>
+    <Link to="/homepage/">Go to page 2</Link>
   </Layout>
 )
 
