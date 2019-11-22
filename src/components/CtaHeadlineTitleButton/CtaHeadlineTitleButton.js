@@ -25,10 +25,11 @@ const styles = {
 
 const CtaHeadlineTitleButton = ({ classes }) => {
   const identifyUser = () => {
-    console.log("hit")
-    window.analytics.identify("97980cfea0067", {
-      name: "Peter Gibbons",
-      email: "peter@initech.com",
+    const userId = Math.round(Date.now() + Math.random())
+
+    window.analytics.identify(userId, {
+      name: "Tyler McNamara",
+      email: "mcnamara14@gmail.com",
       plan: "premium",
       logins: 5,
     })
