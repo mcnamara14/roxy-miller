@@ -1,13 +1,15 @@
 import React from "react"
 import headerLogo from "src/images/header-logo.png"
 import withStyles from "@material-ui/core/styles/withStyles"
-import { Link } from "@material-ui/core"
+import { Link } from "gatsby"
 
 const styles = {
-  image: {
-    width: 105,
+  logoLink: {
     gridColumn: "1/3",
     alignSelf: "center",
+  },
+  logo: {
+    width: 105,
   },
   nav: {
     gridColumn: "3/13",
@@ -24,11 +26,10 @@ const styles = {
       fontWeight: 700,
       "&:hover": {
         cursor: "pointer",
+        transition: "color .2s cubic-bezier(.72,.16,.345,.875)",
       },
       "& a": {
-        "&:active": {
-          color: "red",
-        },
+        textDecoration: "none",
       },
     },
   },
@@ -37,15 +38,23 @@ const styles = {
 const Header = ({ classes }) => {
   return (
     <>
-      <img
-        src={headerLogo}
-        className={classes.image}
-        alt="Header navigation logo"
-      />
+      <Link
+        to="/"
+        activeStyle={{ color: "darkslategray" }}
+        className={classes.logoLink}
+      >
+        <img
+          src={headerLogo}
+          alt="Header navigation logo"
+          className={classes.logo}
+        />
+      </Link>
       <nav className={classes.nav}>
         <ul className={classes.navRoot}>
           <li>
-            <Link to="/homepage/">Our Work</Link>
+            <Link to="/" activeStyle={{ color: "darkslategray" }}>
+              Our Work
+            </Link>
           </li>
           <li>What We Do</li>
           <li>About</li>

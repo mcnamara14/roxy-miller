@@ -4,6 +4,8 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "src/components/Header/Header"
 import "./layout.css"
+import { ThemeProvider } from "@material-ui/styles"
+import theme from "src/constants/roxymillerTheme"
 
 const styles = {
   page: {
@@ -22,6 +24,11 @@ const styles = {
     gridTemplateColumns: "repeat(12, 1fr)",
     display: "grid",
   },
+  main: {
+    gridTemplateColumns: "repeat(12, 1fr)",
+    display: "grid",
+    gridColumn: "1/13",
+  },
 }
 
 const Layout = ({ children, classes }) => {
@@ -38,8 +45,10 @@ const Layout = ({ children, classes }) => {
   return (
     <div className={classes.page}>
       <div className={classes.container}>
-        <Header />
-        <main>{children}</main>
+        <ThemeProvider theme={theme}>
+          <Header />
+          <main className={classes.main}>{children}</main>
+        </ThemeProvider>
       </div>
     </div>
   )

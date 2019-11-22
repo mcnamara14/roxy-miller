@@ -7,4 +7,9 @@ exports.createPages = ({ actions }) => {
     path: `/`,
     component: path.resolve(`./src/pages/Homepage/Homepage.js`),
   })
+
+  createPage({
+    path: `/page-2/`,
+    component: path.resolve(`./src/pages/SecondPage/SecondPage.js`),
+  })
 }
