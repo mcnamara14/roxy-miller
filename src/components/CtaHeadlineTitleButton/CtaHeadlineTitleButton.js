@@ -1,6 +1,6 @@
 import React from "react"
 import withStyles from "@material-ui/core/styles/withStyles"
-import { Typography } from "@material-ui/core"
+import { Typography, Button } from "@material-ui/core"
 
 const styles = {
   hrHeadline: {
@@ -24,6 +24,16 @@ const styles = {
 }
 
 const CtaHeadlineTitleButton = ({ classes }) => {
+  const identifyUser = () => {
+    console.log("hit")
+    window.analytics.identify("97980cfea0067", {
+      name: "Peter Gibbons",
+      email: "peter@initech.com",
+      plan: "premium",
+      logins: 5,
+    })
+  }
+
   return (
     <div className={classes.hrHeadline}>
       <div className={classes.container}>
@@ -31,6 +41,9 @@ const CtaHeadlineTitleButton = ({ classes }) => {
         <Typography variant="body1" className={classes.headline}>
           WHAT WE DO
         </Typography>
+        <Button variant="contained" onClick={() => identifyUser()}>
+          Identify me
+        </Button>
       </div>
     </div>
   )
