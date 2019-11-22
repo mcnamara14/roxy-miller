@@ -1,5 +1,5 @@
 import React from "react"
-import coffeeShop from "src/images/coffee-shop.jpg"
+import CoffeeShop from "src/components/assets/ImageComponents/CoffeeShop"
 import withStyles from "@material-ui/core/styles/withStyles"
 
 const styles = {
@@ -12,7 +12,7 @@ const styles = {
 }
 
 const HomepageCarousel = ({ classes }) => {
-  return <img src={coffeeShop} className={classes.image} />
+  return <CoffeeShop className={classes.image} />
 }
 
 export default withStyles(styles)(HomepageCarousel)
