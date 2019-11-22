@@ -4,7 +4,7 @@ exports.createPages = ({ actions }) => {
   const { createPage } = actions
 
   createPage({
-    path: `/homepage`,
+    path: `/`,
     component: path.resolve(`./src/pages/Homepage/Homepage.js`),
   })
 }

@@ -18,7 +18,7 @@ const styles = {
     paddingTop: 50,
     boxSizing: "border-box",
     width: "100%",
-    height: "100%",
+    height: "fit-content",
     gridTemplateColumns: "repeat(12, 1fr)",
     display: "grid",
   },

@@ -68,7 +68,12 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+    >
+      <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap"
+        rel="stylesheet"
+      />
+    </Helmet>
   )
 }
 
