@@ -41,6 +41,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `y2380nr7sdfl`,
+        accessToken: `G0sTIuYkiDVT1_nuEWKNu37E3mi3NqUDIu4MyRfmw9M`,
+      },
+    },
+    {
       resolve: "gatsby-plugin-root-import",
       options: {
         src: path.join(__dirname, "src"),

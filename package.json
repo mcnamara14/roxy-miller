@@ -6,6 +6,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@material-ui/core": "^4.7.0",
+    "contentful": "^7.10.0",
     "gatsby": "^2.17.11",
     "gatsby-image": "^2.2.31",
     "gatsby-plugin-manifest": "^2.2.27",
@@ -14,13 +15,15 @@
     "gatsby-plugin-react-helmet": "^3.1.14",
     "gatsby-plugin-segment-js": "^3.0.1",
     "gatsby-plugin-sharp": "^2.3.2",
+    "gatsby-source-contentful": "^2.1.62",
     "gatsby-source-filesystem": "^2.1.38",
     "gatsby-transformer-sharp": "^2.3.5",
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-helmet": "^5.2.1",
-    "react-reveal": "^1.2.2"
+    "react-reveal": "^1.2.2",
+    "sharp": "^0.23.3"
   },
   "devDependencies": {
     "gatsby-plugin-root-import": "^2.0.5",

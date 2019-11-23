@@ -6,13 +6,27 @@ import HomepageCarousel from "src/components/HomepageCarousel/HomepageCarousel"
 import CtaHeadlineTitleButton from "src/components/CtaHeadlineTitleButton/CtaHeadlineTitleButton"
 import SEO from "src/components/seo"
 
-const Homepage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <Hero />
-    <HomepageCarousel />
-    <CtaHeadlineTitleButton />
-  </Layout>
-)
+const Homepage = ({
+  data: {
+    contentfulTitle: { title },
+  },
+}) => {
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <Hero title={title} />
+      <HomepageCarousel />
+      <CtaHeadlineTitleButton />
+    </Layout>
+  )
+}
+
+export const pageQuery = graphql`
+  query HomepageTitle {
+    contentfulTitle(contentful_id: { eq: "5AJcGQN4K6Z7Rp3oK3BDwR" }) {
+      title
+    }
+  }
+`
 
 export default Homepage
