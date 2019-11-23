@@ -24,16 +24,7 @@ const styles = {
 }
 
 const CtaHeadlineTitleButton = ({ classes }) => {
-  const identifyUser = () => {
-    const userId = Math.round(Date.now() + Math.random())
-
-    window.analytics.identify(userId, {
-      name: "Tyler McNamara",
-      email: "mcnamara14@gmail.com",
-      plan: "premium",
-      logins: 5,
-    })
-
+  const trackUser = () => {
     window.analytics.track("Registered", {
       plan: "Pro Annual",
       accountType: "Facebook",
@@ -47,7 +38,7 @@ const CtaHeadlineTitleButton = ({ classes }) => {
         <Typography variant="body1" className={classes.headline}>
           WHAT WE DO
         </Typography>
-        <Button variant="contained" onClick={() => identifyUser()}>
+        <Button variant="contained" onClick={() => trackUser()}>
           Identify me
         </Button>
       </div>

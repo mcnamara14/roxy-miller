@@ -75,7 +75,9 @@ const Header = ({ classes }) => {
           <li>What We Do</li>
           <li>About</li>
           <li>News</li>
-          <li>Career</li>
+          <li>
+            <Link to="/contact/">Contact</Link>
+          </li>
         </ul>
       </nav>
     </>

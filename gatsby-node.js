@@ -9,6 +9,11 @@ exports.createPages = ({ actions }) => {
   })
 
   createPage({
+    path: `/contact/`,
+    component: path.resolve(`./src/pages/Contact/Contact.js`),
+  })
+
+  createPage({
     path: `/page-2/`,
     component: path.resolve(`./src/pages/SecondPage/SecondPage.js`),
   })
