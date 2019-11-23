@@ -21,14 +21,18 @@ const styles = {
 
 const Contact = ({ classes }) => {
   const [email, setEmail] = useState("")
+  const [name, setName] = useState("")
+  const [phone, setPhone] = useState("")
+  const [company, setCompany] = useState("")
 
   const onSubmit = () => {
     const userId = Math.round(Date.now() + Math.random())
 
     window.analytics.identify(userId, {
-      email: email,
-      plan: "premium",
-      logins: 5,
+      name,
+      email,
+      phone,
+      company,
     })
   }
 
@@ -36,13 +40,14 @@ const Contact = ({ classes }) => {
     <Layout>
       <SEO title="Home" />
       <FormControl className={classes.container}>
+        <InputLabel htmlFor="my-input">Name</InputLabel>
+        <Input onChange={event => setName(event.target.value)} on />
         <InputLabel htmlFor="my-input">Email address</InputLabel>
-        <Input
-          id="my-input"
-          aria-describedby="my-helper-text"
-          onChange={event => setEmail(event.target.value)}
-          on
-        />
+        <Input onChange={event => setEmail(event.target.value)} on />
+        <InputLabel htmlFor="my-input">Phone number</InputLabel>
+        <Input onChange={event => setPhone(event.target.value)} on />
+        <InputLabel htmlFor="my-input">Company</InputLabel>
+        <Input onChange={event => setCompany(event.target.value)} on />
         <FormHelperText id="my-helper-text">
           We'll never share your email.
         </FormHelperText>
