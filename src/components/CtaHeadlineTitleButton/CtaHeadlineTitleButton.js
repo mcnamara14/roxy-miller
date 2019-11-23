@@ -33,6 +33,11 @@ const CtaHeadlineTitleButton = ({ classes }) => {
       plan: "premium",
       logins: 5,
     })
+
+    window.analytics.track("Registered", {
+      plan: "Pro Annual",
+      accountType: "Facebook",
+    })
   }
 
   return (
