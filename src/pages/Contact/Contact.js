@@ -30,7 +30,16 @@ const Contact = ({ classes }) => {
 
   const onSubmit = () => {
     const userId = Math.round(Date.now() + Math.random())
-
+    console.log(
+      "name",
+      name,
+      "email",
+      email,
+      "phone",
+      phone,
+      "company",
+      company
+    )
     window.analytics.identify(userId, {
       name,
       email,
