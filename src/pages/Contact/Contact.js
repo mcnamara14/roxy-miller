@@ -14,6 +14,9 @@ const styles = {
     margin: "100px 0",
     gridColumn: "1/13",
   },
+  label: {
+    position: "relative",
+  },
   button: {
     gridColumn: "1/4",
   },
@@ -40,13 +43,13 @@ const Contact = ({ classes }) => {
     <Layout>
       <SEO title="Home" />
       <FormControl className={classes.container}>
-        <InputLabel htmlFor="my-input">Name</InputLabel>
+        <InputLabel className={classes.label}>Name</InputLabel>
         <Input onChange={event => setName(event.target.value)} on />
-        <InputLabel htmlFor="my-input">Email address</InputLabel>
+        <InputLabel className={classes.label}>Email address</InputLabel>
         <Input onChange={event => setEmail(event.target.value)} on />
-        <InputLabel htmlFor="my-input">Phone number</InputLabel>
+        <InputLabel className={classes.label}>Phone number</InputLabel>
         <Input onChange={event => setPhone(event.target.value)} on />
-        <InputLabel htmlFor="my-input">Company</InputLabel>
+        <InputLabel className={classes.label}>Company</InputLabel>
         <Input onChange={event => setCompany(event.target.value)} on />
         <FormHelperText id="my-helper-text">
           We'll never share your email.
