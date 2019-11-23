@@ -38,9 +38,9 @@ const CtaHeadlineTitleButton = ({ classes }) => {
         <Typography variant="body1" className={classes.headline}>
           WHAT WE DO
         </Typography>
-        <Button variant="contained" onClick={() => trackUser()}>
+        {/* <Button variant="contained" onClick={() => trackUser()}>
           Identify me
-        </Button>
+        </Button> */}
       </div>
     </div>
   )
