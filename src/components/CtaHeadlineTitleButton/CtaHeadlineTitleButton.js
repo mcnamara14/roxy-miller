@@ -1,26 +1,40 @@
-import React from "react"
+import React, { useState } from "react"
 import withStyles from "@material-ui/core/styles/withStyles"
 import { Typography, Button } from "@material-ui/core"
+import DashHeadline from "../DashHeadline/DashHeadline"
+import ButtonMediumBlack from "../buttons/ButtonMediumBlack"
 
-const styles = {
-  hrHeadline: {
-    gridColumn: "1/3",
-  },
-  container: {
-    gridTemplateColumns: "repeat(12, 1fr)",
-    display: "grid",
-    columnGap: 5,
-  },
-  hr: {
-    width: "100%",
-    background: "black",
-    gridColumn: "1/4",
-  },
-  headline: {
-    fontSize: "10px",
-    gridColumn: "5/13",
-    alignSelf: "center",
-  },
+const styles = theme => {
+  return {
+    container: {
+      padding: "0 0 100px 0",
+      gridColumn: "1/13",
+      display: "grid",
+    },
+    hrHeadline: {
+      gridColumn: "1/13",
+      display: "grid",
+    },
+    innerContainer: {
+      display: "grid",
+      columnGap: 5,
+    },
+    hr: {
+      width: "calc(100% - 20px)",
+      background: "black",
+      gridColumn: "1/2",
+      marginRight: 18,
+    },
+    headline: {
+      fontSize: "10px",
+      gridColumn: "2/6",
+      alignSelf: "center",
+    },
+    title: {
+      gridColumn: "2/9",
+      marginTop: 60,
+    },
+  }
 }
 
 const CtaHeadlineTitleButton = ({ classes }) => {
@@ -32,17 +46,13 @@ const CtaHeadlineTitleButton = ({ classes }) => {
   }
 
   return (
-    <div className={classes.hrHeadline}>
-      <div className={classes.container}>
-        <hr className={classes.hr} />
-        <Typography variant="body1" className={classes.headline}>
-          WHAT WE DO
-        </Typography>
-        {/* <Button variant="contained" onClick={() => trackUser()}>
-          Identify me
-        </Button> */}
-      </div>
-    </div>
+    <>
+      <DashHeadline />
+      <Typography variant="h1" color="primary" className={classes.title}>
+        Recent agency happenings, press, and perspectives.
+      </Typography>
+      <ButtonMediumBlack />
+    </>
   )
 }
 

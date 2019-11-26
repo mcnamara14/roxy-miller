@@ -7,6 +7,18 @@ const theme = createMuiTheme({
     dark: "#0069c0",
     contrastText: "#ffffff",
   },
+  buttons: {
+    blackMedium: {
+      maxWidth: 200,
+      height: 56,
+      fontSize: "10px",
+      background: "black",
+      color: "white",
+      "&:hover": {
+        background: "#444",
+      },
+    },
+  },
   status: {
     danger: "orange",
   },
