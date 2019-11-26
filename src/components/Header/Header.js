@@ -46,6 +46,7 @@ const styles = theme => ({
       },
       "& a": {
         textDecoration: "none",
+        color: "black",
       },
     },
   },
@@ -68,7 +69,7 @@ const Header = ({ classes }) => {
       <nav className={classes.nav}>
         <ul className={classes.navRoot}>
           <li>
-            <Link to="/" activeStyle={{ color: "darkslategray" }}>
+            <Link to="/page-2" activeStyle={{ color: "darkslategray" }}>
               Our Work
             </Link>
           </li>

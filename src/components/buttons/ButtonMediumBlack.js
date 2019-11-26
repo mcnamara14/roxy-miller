@@ -9,6 +9,9 @@ const styles = theme => ({
     gridColumn: "2/4",
     margin: "30px 0 100px 0",
     ...theme.buttons.blackMedium,
+    [theme.breakpoints.only("xs")]: {
+      gridColumn: "2/9",
+    },
   },
   arrow: {
     color: "#c8a559",
