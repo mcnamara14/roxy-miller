@@ -1,17 +1,12 @@
 import React, { useState } from "react"
 import withStyles from "@material-ui/core/styles/withStyles"
+import classNames from "classnames"
 import { Button } from "@material-ui/core"
 import TrendingFlatIcon from "@material-ui/icons/TrendingFlat"
-import classNames from "classnames"
 
-const styles = theme => ({
+const styles = ({ buttons }) => ({
   button: {
-    gridColumn: "2/4",
-    margin: "30px 0 100px 0",
-    ...theme.buttons.blackMedium,
-    [theme.breakpoints.only("xs")]: {
-      gridColumn: "2/9",
-    },
+    ...buttons.blackMedium,
   },
   arrow: {
     color: "#c8a559",
@@ -23,14 +18,14 @@ const styles = theme => ({
   },
 })
 
-const ButtonMediumBlack = ({ classes }) => {
+const ButtonMediumBlack = ({ classes, buttonStyles }) => {
   const [hovering, setHovering] = useState(false)
 
   return (
     <Button
       to="/"
       variant="container"
-      className={classes.button}
+      className={classNames(classes.button, buttonStyles)}
       onMouseOver={() => setHovering(true)}
       onMouseOut={() => setHovering(false)}
     >
