@@ -1,5 +1,5 @@
 import React from "react"
-import headerLogo from "src/images/header-logo.png"
+import headerLogo from "src/images/roxy-miller-header-logo.png"
 import withStyles from "@material-ui/core/styles/withStyles"
 import { Link } from "gatsby"
 
@@ -9,7 +9,7 @@ const styles = theme => ({
     alignSelf: "center",
   },
   logo: {
-    width: 105,
+    width: 190,
   },
   nav: {
     gridColumn: "3/13",

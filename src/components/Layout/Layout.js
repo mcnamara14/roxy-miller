@@ -9,7 +9,7 @@ import theme from "src/constants/roxymillerTheme"
 
 const styles = theme => ({
   page: {
-    background: "#f4f4f4",
+    background: "#e8e8e8",
     padding: "0 50px",
     height: "100%",
     [theme.breakpoints.down("xs")]: {

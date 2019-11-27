@@ -41,7 +41,7 @@ const Contact = ({ classes }) => {
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Contact Roxy Miller" />
       <FormControl className={classes.container}>
         <InputLabel className={classes.label}>Name</InputLabel>
         <Input onChange={event => setName(event.target.value)} on />

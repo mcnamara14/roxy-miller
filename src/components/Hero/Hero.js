@@ -1,5 +1,4 @@
 import React from "react"
-import headerLogo from "src/images/header-logo.png"
 import withStyles from "@material-ui/core/styles/withStyles"
 import { Typography } from "@material-ui/core"
 import Fade from "react-reveal/Fade"

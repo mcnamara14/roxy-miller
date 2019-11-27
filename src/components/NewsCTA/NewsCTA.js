@@ -20,14 +20,14 @@ const styles = {
     transform: "scale(1.12)",
   },
   grid: {
-    gridColumn: "1/5",
+    gridColumn: "2/6",
   },
   effectChico: {
     position: "relative",
     float: "left",
     overflow: "hidden",
     margin: 0,
-    background: "#3085a3",
+    background: "#111",
     textAlign: "center",
     cursor: "pointer",
     "&:hover img": {
@@ -84,8 +84,12 @@ const styles = {
   },
   imageTitle: {
     fontSize: 24,
-    padding: "27% 0 10px 0",
+    padding: "33% 0 10px 0",
     marginBottom: 10,
+    fontWeight: "400",
+    "& span": {
+      fontWeight: "700",
+    },
   },
   imageSubTitle: {
     margin: "0 auto",
@@ -100,7 +104,7 @@ const styles = {
     margin: "20px 0",
   },
   title: {
-    gridColumn: "1/5",
+    gridColumn: "2/6",
   },
 }
 
