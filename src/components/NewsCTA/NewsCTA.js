@@ -1,6 +1,7 @@
 import React from "react"
 import { withStyles } from "@material-ui/styles"
 import { Typography } from "@material-ui/core"
+import DashHeadline from "../DashHeadline/DashHeadline"
 
 const styles = {
   container: {
@@ -81,12 +82,12 @@ const styles = {
     fontSize: 0,
     opacity: 0,
   },
-  title: {
+  imageTitle: {
     fontSize: 24,
-    padding: "27% 0 0 0",
+    padding: "27% 0 10px 0",
     marginBottom: 10,
   },
-  subTitle: {
+  imageSubTitle: {
     margin: "0 auto",
     maxWidth: 200,
     transform: "scale(1.5)",
@@ -95,32 +96,44 @@ const styles = {
     fontSize: 10,
     fontTransform: "uppercase",
   },
+  dashHeadline: {
+    margin: "20px 0",
+  },
+  title: {
+    gridColumn: "1/5",
+  },
 }
 
 const NewsCTA = ({ classes }) => {
   return (
-    <div className={classes.container}>
-      <div className={classes.grid}>
-        <figure className={classes.effectChico}>
-          <img
-            src="https://tympanus.net/Development/HoverEffectIdeas/img/4.jpg"
-            alt="img04"
-            className={classes.image}
-          />
-          <figcaption className={classes.caption}>
-            <Typography variant="h2" className={classes.title}>
-              Silly <span>Chicoad</span>
-            </Typography>
-            <Typography variant="body1" className={classes.subTitle}>
-              Chico's main fear was missing the morning bus.
-            </Typography>
-            <a href="#" className={classes.link}>
-              View more
-            </a>
-          </figcaption>
-        </figure>
+    <>
+      <div className={classes.container}>
+        <div className={classes.grid}>
+          <figure className={classes.effectChico}>
+            <img
+              src="https://tympanus.net/Development/HoverEffectIdeas/img/4.jpg"
+              alt="img04"
+              className={classes.image}
+            />
+            <figcaption className={classes.caption}>
+              <Typography variant="h2" className={classes.imageTitle}>
+                Silly <span>Chicoad</span>
+              </Typography>
+              <Typography variant="body1" className={classes.imageSubTitle}>
+                Chico's main fear was missing the morning bus.
+              </Typography>
+              <a href="#" className={classes.link}>
+                View more
+              </a>
+            </figcaption>
+          </figure>
+        </div>
       </div>
-    </div>
+      <DashHeadline containerStyles={classes.dashHeadline} />
+      <Typography variant="h6" className={classes.title}>
+        BASIC® Deemed One of the World’s Fastest Growing Agencies by Adweek
+      </Typography>
+    </>
   )
 }
 

@@ -7,7 +7,7 @@ const styles = {
   container: {
     display: "grid",
     gridTemplateColumns: "repeat(12, 1fr)",
-    gridColumn: "1/3",
+    gridColumn: "1/13",
   },
   hr: {
     background: "black",
@@ -25,14 +25,14 @@ const styles = {
   },
 }
 
-const DashHeadline = ({ classes }) => {
+const DashHeadline = ({ classes, containerStyles }) => {
   return (
-    <>
+    <div className={classNames(containerStyles, classes.container)}>
       <div className={classes.hr} />
       <Typography variant="body1" className={classes.headline}>
         WHAT WE DO
       </Typography>
-    </>
+    </div>
   )
 }
 
