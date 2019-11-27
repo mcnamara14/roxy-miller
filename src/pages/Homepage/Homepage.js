@@ -3,8 +3,9 @@ import React from "react"
 import Layout from "src/components/Layout/Layout"
 import Hero from "src/components/Hero/Hero"
 import HomepageCarousel from "src/components/HomepageCarousel/HomepageCarousel"
-import CtaHeadlineTitleButton from "src/components/CtaHeadlineTitleButton/CtaHeadlineTitleButton"
+import HeadlineTitleButton from "src/components/HeadlineTitleButton/HeadlineTitleButton"
 import SEO from "src/components/seo"
+import NewsCtasLayout from "src/components/layouts/NewsCtasLayout"
 
 const Homepage = ({
   data: {
@@ -16,7 +17,8 @@ const Homepage = ({
       <SEO title="Home" />
       <Hero title={title} />
       <HomepageCarousel />
-      <CtaHeadlineTitleButton />
+      <HeadlineTitleButton />
+      <NewsCtasLayout />
     </Layout>
   )
 }

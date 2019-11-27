@@ -18,7 +18,7 @@ const styles = theme => ({
   },
 })
 
-const CtaHeadlineTitleButton = ({ classes }) => {
+const HeadlineTitleButton = ({ classes }) => {
   // const trackUser = () => {
   //   window.analytics.track("Registered", {
   //     plan: "Pro Annual",
@@ -37,4 +37,4 @@ const CtaHeadlineTitleButton = ({ classes }) => {
   )
 }
 
-export default withStyles(styles)(CtaHeadlineTitleButton)
+export default withStyles(styles)(HeadlineTitleButton)
