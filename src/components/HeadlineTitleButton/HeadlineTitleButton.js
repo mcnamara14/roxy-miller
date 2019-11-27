@@ -4,15 +4,22 @@ import { Typography } from "@material-ui/core"
 import DashHeadline from "../DashHeadline/DashHeadline"
 import ButtonMediumBlack from "../buttons/ButtonMediumBlack"
 
-const styles = theme => ({
+const styles = ({ breakpoints }) => ({
   title: {
-    gridColumn: "2/9",
+    gridColumn: "2/7",
     marginTop: 60,
+    [breakpoints.only("sm")]: {
+      gridColumn: "2/10",
+    },
+    [breakpoints.only("xs")]: {
+      gridColumn: "2/13",
+    },
   },
   button: {
     gridColumn: "2/4",
     margin: "30px 0 100px 0",
-    [theme.breakpoints.only("xs")]: {
+    minWidth: 200,
+    [breakpoints.down("sm")]: {
       gridColumn: "2/9",
     },
   },

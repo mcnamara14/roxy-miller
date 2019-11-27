@@ -3,12 +3,11 @@ import { withStyles } from "@material-ui/styles"
 import { Typography } from "@material-ui/core"
 import DashHeadline from "../DashHeadline/DashHeadline"
 
-const styles = {
+const styles = ({ breakpoints }) => ({
   container: {
     gridTemplateColumns: "repeat(12, 1fr)",
     gridColumn: "1/13",
     display: "grid",
-    columnGap: 80,
   },
   image: {
     position: "relative",
@@ -21,6 +20,9 @@ const styles = {
   },
   grid: {
     gridColumn: "2/6",
+    [breakpoints.down("xs")]: {
+      gridColumn: "1/13",
+    },
   },
   effectChico: {
     position: "relative",
@@ -105,8 +107,11 @@ const styles = {
   },
   title: {
     gridColumn: "2/6",
+    [breakpoints.down("xs")]: {
+      gridColumn: "1/13",
+    },
   },
-}
+})
 
 const NewsCTA = ({ classes }) => {
   return (
@@ -121,7 +126,7 @@ const NewsCTA = ({ classes }) => {
             />
             <figcaption className={classes.caption}>
               <Typography variant="h2" className={classes.imageTitle}>
-                Silly <span>Chicoad</span>
+                Silly <span>Chico</span>
               </Typography>
               <Typography variant="body1" className={classes.imageSubTitle}>
                 Chico's main fear was missing the morning bus.
@@ -135,7 +140,7 @@ const NewsCTA = ({ classes }) => {
       </div>
       <DashHeadline containerStyles={classes.dashHeadline} />
       <Typography variant="h6" className={classes.title}>
-        BASIC® Deemed One of the World’s Fastest Growing Agencies by Adweek
+        ROXYMILLER® Deemed One of the World’s Fastest Growing Agencies by Tyler
       </Typography>
     </>
   )
