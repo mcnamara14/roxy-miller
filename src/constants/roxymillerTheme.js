@@ -30,6 +30,10 @@ const theme = createMuiTheme({
         fontWeight: 700,
         lineHeight: "46px",
       },
+      h2: {
+        fontFamily: "Open Sans",
+        fontSize: 48,
+      },
       colorPrimary: {
         color: "#000",
       },
