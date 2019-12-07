@@ -11,6 +11,7 @@ import Layout from "../Layout/Layout"
 const styles = theme => ({
   page: {
     height: "100%",
+    paddingBottom: 200,
     [theme.breakpoints.down("xs")]: {
       padding: "0 20px",
     },

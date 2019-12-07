@@ -7,6 +7,7 @@ import NewsCtasLayout from "src/components/layouts/NewsCtasLayout"
 import Layout from "src/components/Layout/Layout"
 import { withStyles } from "@material-ui/core/styles"
 import TitleServices from "src/composites/Homepage/TitleServices"
+import AnimatedImageThree from "../../components/AnimatedImages/AnimatedImageThree"
 
 const styles = {
   products: {
@@ -29,7 +30,7 @@ const Homepage = ({
       </Layout>
       <Layout>
         <TitleServices />
-        <NewsCtasLayout />
+        <AnimatedImageThree />
       </Layout>
     </Page>
   )
