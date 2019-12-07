@@ -1,8 +1,14 @@
-/* eslint-disable import/prefer-default-export, react/prop-types */
+// /* eslint-disable import/prefer-default-export, react/prop-types */
 
-import React from "react"
-import App from "src/components/App/App"
+// import React from "react"
+// import { ThemeProvider } from "@material-ui/styles"
+// import theme from "src/constants/roxymillerTheme"
 
-export const wrapRootElement = ({ element }) => {
-  return <App>{element}</App>
-}
+// export const wrapRootElement = ({ element }) => {
+//   return (
+//     <>
+//       <div name="wrapRootElement-start" mode="browser" />
+//       <ThemeProvider theme={theme}>{element}</ThemeProvider>
+//     </>
+//   )
+// }

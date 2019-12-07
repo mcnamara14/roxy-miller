@@ -30,12 +30,14 @@ const Page = ({ children, classes }) => {
   `)
 
   return (
-    <div className={classes.page}>
-      <Layout>
-        <Header />
-      </Layout>
-      {children}
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className={classes.page}>
+        <Layout>
+          <Header />
+        </Layout>
+        {children}
+      </div>
+    </ThemeProvider>
   )
 }
 

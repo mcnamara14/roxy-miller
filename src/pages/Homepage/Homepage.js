@@ -3,18 +3,15 @@ import React from "react"
 import Page from "src/components/Page/Page"
 import Hero from "src/components/Hero/Hero"
 import SEO from "src/components/seo"
+// import NewsCtasLayout from "src/components/layouts/NewsCtasLayout"
 import Layout from "src/components/Layout/Layout"
 import { withStyles } from "@material-ui/core/styles"
 import TitleServices from "src/composites/Homepage/TitleServices"
-import Portfolio from "../../composites/Homepage/Portfolio"
 
 const styles = {
   products: {
     gridColumn: "1/11",
     padding: "0 0 70px 0",
-  },
-  portfolio: {
-    columnGap: 20,
   },
 }
 
@@ -32,9 +29,6 @@ const Homepage = ({
       </Layout>
       <Layout>
         <TitleServices />
-      </Layout>
-      <Layout styles={classes.portfolio}>
-        <Portfolio />
       </Layout>
     </Page>
   )

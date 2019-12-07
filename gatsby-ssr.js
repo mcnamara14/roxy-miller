@@ -1,8 +1,9 @@
-/* eslint-disable import/prefer-default-export, react/prop-types */
+// /* eslint-disable import/prefer-default-export, react/prop-types */
 
 import React from "react"
-import App from "src/components/App/App"
+import { ThemeProvider } from "@material-ui/styles"
+import theme from "src/constants/roxymillerTheme"
 
 export const wrapRootElement = ({ element }) => {
-  return <App>{element}</App>
+  return <ThemeProvider theme={theme}>{element}</ThemeProvider>
 }

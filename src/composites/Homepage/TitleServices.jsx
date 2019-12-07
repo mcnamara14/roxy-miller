@@ -3,27 +3,31 @@ import { withStyles } from "@material-ui/core/styles"
 import { Typography } from "@material-ui/core"
 import Fade from "react-reveal/Fade"
 
-const styles = {
-  products: {
-    gridColumn: "1/10",
-    padding: "0 0 50px 0",
-  },
-  services: {
-    gridTemplateColumns: "repeat(12, 1fr)",
-    gridColumn: "1/13",
-    display: "grid",
-  },
-  service: {
-    paddingBottom: 5,
-  },
-  leftCol: {
-    gridColumn: "7/10",
-    justifySelf: "end",
-  },
-  rightCol: {
-    gridColumn: "11/13",
-    justifySelf: "end",
-  },
+const styles = theme => {
+  console.log("theme", theme)
+  return {
+    products: {
+      gridColumn: "1/10",
+      padding: "0 0 50px 0",
+    },
+    services: {
+      gridTemplateColumns: "repeat(12, 1fr)",
+      gridColumn: "1/13",
+      display: "grid",
+    },
+    service: {
+      paddingBottom: 5,
+      color: theme.palette.blue,
+    },
+    leftCol: {
+      gridColumn: "7/10",
+      justifySelf: "end",
+    },
+    rightCol: {
+      gridColumn: "11/13",
+      justifySelf: "end",
+    },
+  }
 }
 
 const TitleServices = ({ classes }) => {

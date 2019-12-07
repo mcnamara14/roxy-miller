@@ -7,6 +7,8 @@
   "dependencies": {
     "@material-ui/core": "^4.7.0",
     "@material-ui/icons": "^4.5.1",
+    "@material-ui/styles": "^4.7.1",
+    "babel-plugin-styled-components": "^1.10.6",
     "classnames": "^2.2.6",
     "contentful": "^7.10.0",
     "gatsby": "^2.17.11",
@@ -17,6 +19,7 @@
     "gatsby-plugin-react-helmet": "^3.1.14",
     "gatsby-plugin-segment-js": "^3.0.1",
     "gatsby-plugin-sharp": "^2.3.2",
+    "gatsby-plugin-styled-components": "^3.1.14",
     "gatsby-source-contentful": "^2.1.62",
     "gatsby-source-filesystem": "^2.1.38",
     "gatsby-transformer-sharp": "^2.3.5",
@@ -25,7 +28,8 @@
     "react-dom": "^16.11.0",
     "react-helmet": "^5.2.1",
     "react-reveal": "^1.2.2",
-    "sharp": "^0.23.3"
+    "sharp": "^0.23.3",
+    "styled-components": "^4.4.1"
   },
   "devDependencies": {
     "gatsby-plugin-root-import": "^2.0.5",

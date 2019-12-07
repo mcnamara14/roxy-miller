@@ -1,4 +1,5 @@
 const path = require("path")
+const roxyMillerTheme = require("./src/constants/roxyMillerTheme")
 
 module.exports = {
   siteMetadata: {
@@ -7,6 +8,7 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    "gatsby-plugin-top-layout",
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-segment-js`,
@@ -30,7 +32,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-material-ui`,
       options: {
-        // Add any options here
+        theme: roxyMillerTheme,
       },
     },
     {
