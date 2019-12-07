@@ -1,4 +1,4 @@
-const createMuiTheme = require('@material-ui/core/styles').createMuiTheme
+const createMuiTheme = require("@material-ui/core/styles").createMuiTheme
 
 let styles = {
   primary: {
@@ -51,6 +51,6 @@ let styles = {
       },
     },
   },
-})
+}
 
 module.exports = createMuiTheme(styles)
