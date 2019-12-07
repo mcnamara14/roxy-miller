@@ -2,12 +2,21 @@ import React from "react"
 // Components
 import Page from "src/components/Page/Page"
 import Hero from "src/components/Hero/Hero"
-import HeadlineTitleButton from "src/components/HeadlineTitleButton/HeadlineTitleButton"
 import SEO from "src/components/seo"
 import NewsCtasLayout from "src/components/layouts/NewsCtasLayout"
 import Layout from "src/components/Layout/Layout"
+import { withStyles } from "@material-ui/core/styles"
+import TitleServices from "src/composites/Homepage/TitleServices"
+
+const styles = {
+  products: {
+    gridColumn: "1/11",
+    padding: "0 0 70px 0",
+  },
+}
 
 const Homepage = ({
+  classes,
   data: {
     contentfulTitle: { title },
   },
@@ -19,7 +28,7 @@ const Homepage = ({
         <Hero title={title} />
       </Layout>
       <Layout>
-        <HeadlineTitleButton />
+        <TitleServices />
         <NewsCtasLayout />
       </Layout>
     </Page>
@@ -34,4 +43,4 @@ export const pageQuery = graphql`
   }
 `
 
-export default Homepage
+export default withStyles(styles)(Homepage)

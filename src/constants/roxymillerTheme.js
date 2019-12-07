@@ -40,6 +40,9 @@ const theme = createMuiTheme({
         fontFamily: "Open Sans",
         fontSize: 48,
       },
+      h6: {
+        fontWeight: 300,
+      },
       colorPrimary: {
         color: "#000",
       },
