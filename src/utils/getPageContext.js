@@ -4,6 +4,7 @@ import { createGenerateClassName } from "@material-ui/core/styles"
 import theme from "src/constants/roxyMillerTheme"
 
 function createPageContext() {
+  console.log("theme", theme)
   return {
     theme,
     sheetsManager: new Map(),
