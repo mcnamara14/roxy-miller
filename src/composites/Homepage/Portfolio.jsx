@@ -3,6 +3,8 @@ import { withStyles } from "@material-ui/core/styles"
 import { Typography } from "@material-ui/core"
 import PortfolioItem from "./PortfolioItem"
 import Fade from "react-reveal/Fade"
+import imageOne from "src/images/homepage-portfolio-design.jpg"
+import imageTwo from "src/images/homepage-portfolio-development.jpg"
 
 const styles = ({ breakpoints }) => ({
   title: {
@@ -11,21 +13,24 @@ const styles = ({ breakpoints }) => ({
     gridColumn: "1/13",
     padding: "60px 0",
   },
-  workOne: {
-    gridColumn: "1/5",
-    [breakpoints.down("xs")]: {
+  portfolioItems: {
+    gridTemplateColumns: "repeat(12, 1fr)",
+    gridColumn: "1/13",
+    display: "grid",
+    columnGap: 100,
+    [breakpoints.down("sm")]: {
+      columnGap: 0,
+    },
+  },
+  itemOne: {
+    gridColumn: "2/7",
+    [breakpoints.down("sm")]: {
       gridColumn: "1/13",
     },
   },
-  workTwo: {
-    gridColumn: "5/9",
-    [breakpoints.down("xs")]: {
-      gridColumn: "1/13",
-    },
-  },
-  workThree: {
-    gridColumn: "9/13",
-    [breakpoints.down("xs")]: {
+  itemTwo: {
+    gridColumn: "7/12",
+    [breakpoints.down("sm")]: {
       gridColumn: "1/13",
     },
   },
@@ -41,7 +46,18 @@ const Portfolio = ({ classes }) => {
           </Typography>
         </Fade>
       </div>
-      <PortfolioItem />
+      <div className={classes.portfolioItems}>
+        <PortfolioItem
+          classes={{ root: classes.itemOne }}
+          image={imageOne}
+          fadeLeft={true}
+        />
+        <PortfolioItem
+          classes={{ root: classes.itemTwo }}
+          image={imageTwo}
+          fadeRight={true}
+        />
+      </div>
     </>
   )
 }

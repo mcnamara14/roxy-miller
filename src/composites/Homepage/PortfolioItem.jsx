@@ -1,13 +1,10 @@
 import React from "react"
 import { withStyles } from "@material-ui/core/styles"
 import { Typography } from "@material-ui/core"
-import image from "src/images/homepage-portfolio-design.jpg"
 import Fade from "react-reveal/Fade"
 
 const styles = ({ breakpoints, palette }) => ({
-  root: {
-    gridColumn: "1/5",
-  },
+  root: {},
   image: {
     width: "100%",
   },
@@ -21,11 +18,13 @@ const styles = ({ breakpoints, palette }) => ({
   },
 })
 
-const PortfolioItem = ({ classes }) => {
+const PortfolioItem = ({ classes, image, fadeLeft, fadeRight }) => {
   return (
     <>
       <div className={classes.root}>
-        <img src={image} alt="img04" className={classes.image} />
+        <Fade left={fadeLeft} right={fadeRight}>
+          <img src={image} alt="img04" className={classes.image} />
+        </Fade>
         <Fade bottom cascade>
           <Typography variant="h5" className={classes.title}>
             <b>Web Design</b>
