@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 // Components
-import Layout from "src/components/Layout/Layout"
+import Page from "src/components/Page/Page"
 import SEO from "src/components/seo"
 import FormControl from "@material-ui/core/FormControl"
 import InputLabel from "@material-ui/core/InputLabel"
@@ -40,7 +40,7 @@ const Contact = ({ classes }) => {
   }
 
   return (
-    <Layout>
+    <Page>
       <SEO title="Contact Roxy Miller" />
       <FormControl className={classes.container}>
         <InputLabel className={classes.label}>Name</InputLabel>
@@ -58,7 +58,7 @@ const Contact = ({ classes }) => {
       <Button onClick={onSubmit} variant="container" className={classes.button}>
         Submit
       </Button>
-    </Layout>
+    </Page>
   )
 }
 

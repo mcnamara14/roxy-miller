@@ -15,6 +15,7 @@ const styles = theme => ({
     gridColumn: "3/13",
     display: "grid",
     justifyContent: "end",
+    padding: "30px 0",
     [theme.breakpoints.down("sm")]: {
       gridColumn: "1/13",
       justifyContent: "start",

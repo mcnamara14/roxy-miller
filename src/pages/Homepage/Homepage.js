@@ -1,11 +1,11 @@
 import React from "react"
 // Components
-import Layout from "src/components/Layout/Layout"
+import Page from "src/components/Page/Page"
 import Hero from "src/components/Hero/Hero"
-import HomepageCarousel from "src/components/HomepageCarousel/HomepageCarousel"
 import HeadlineTitleButton from "src/components/HeadlineTitleButton/HeadlineTitleButton"
 import SEO from "src/components/seo"
 import NewsCtasLayout from "src/components/layouts/NewsCtasLayout"
+import Layout from "../../components/Layout/Layout"
 
 const Homepage = ({
   data: {
@@ -13,13 +13,16 @@ const Homepage = ({
   },
 }) => {
   return (
-    <Layout>
+    <Page>
       <SEO title="Home" />
-      <Hero title={title} />
-      <HomepageCarousel />
-      <HeadlineTitleButton />
-      <NewsCtasLayout />
-    </Layout>
+      <Layout fullWidthBgColor="linear-gradient(to bottom, #29a2ff 0%,#29a2ff 70%,#ffffff 30%)">
+        <Hero title={title} />
+      </Layout>
+      <Layout>
+        <HeadlineTitleButton />
+        <NewsCtasLayout />
+      </Layout>
+    </Page>
   )
 }
 

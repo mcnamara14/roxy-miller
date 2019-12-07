@@ -26,7 +26,7 @@ const theme = createMuiTheme({
     MuiTypography: {
       h1: {
         fontFamily: "Open Sans",
-        fontSize: 32,
+        fontSize: 40,
         fontWeight: 700,
         lineHeight: "46px",
       },
