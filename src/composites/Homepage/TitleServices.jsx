@@ -4,7 +4,6 @@ import { Typography } from "@material-ui/core"
 import Fade from "react-reveal/Fade"
 
 const styles = theme => {
-  console.log("theme", theme)
   return {
     products: {
       gridColumn: "1/10",

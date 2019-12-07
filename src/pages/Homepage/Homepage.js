@@ -1,12 +1,13 @@
 import React from "react"
+// Material UI
+import { withStyles } from "@material-ui/core/styles"
 // Components
 import Page from "src/components/Page/Page"
 import Hero from "src/components/Hero/Hero"
 import SEO from "src/components/seo"
-// import NewsCtasLayout from "src/components/layouts/NewsCtasLayout"
 import Layout from "src/components/Layout/Layout"
-import { withStyles } from "@material-ui/core/styles"
 import TitleServices from "src/composites/Homepage/TitleServices"
+import Portfolio from "src/composites/Homepage/Portfolio"
 
 const styles = {
   products: {
@@ -29,6 +30,9 @@ const Homepage = ({
       </Layout>
       <Layout>
         <TitleServices />
+      </Layout>
+      <Layout>
+        <Portfolio />
       </Layout>
     </Page>
   )

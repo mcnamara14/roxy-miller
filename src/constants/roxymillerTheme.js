@@ -25,6 +25,9 @@ const styles = createMuiTheme({
   status: {
     danger: "orange",
   },
+  palette: {
+    lightGray: "#8594AC",
+  },
   overrides: {
     MuiTypography: {
       colorSecondary: {

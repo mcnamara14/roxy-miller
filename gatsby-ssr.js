@@ -1,9 +1,8 @@
-// /* eslint-disable import/prefer-default-export, react/prop-types */
-
 import React from "react"
-import { ThemeProvider } from "@material-ui/styles"
-import theme from "src/constants/roxymillerTheme"
+import jssWrapper from "src/utils/jssWrapper"
+
+const JssServerSideRenderWrapper = jssWrapper(props => props.children)
 
 export const wrapRootElement = ({ element }) => {
-  return <ThemeProvider theme={theme}>{element}</ThemeProvider>
+  return <>{element}</>
 }

@@ -4,7 +4,6 @@ import HeroTitle from "src/components/HeroTitle/HeroTitle"
 import HomepageCarousel from "src/components/HomepageCarousel/HomepageCarousel"
 
 const styles = theme => {
-  console.log("theeeeme", theme)
   return {
     root: {
       background: "#29A2FF",

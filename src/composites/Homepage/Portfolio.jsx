@@ -1,7 +1,7 @@
 import React from "react"
 import { withStyles } from "@material-ui/core/styles"
 import { Typography } from "@material-ui/core"
-import AnimatedImageThree from "src/components/AnimatedImages/AnimatedImageThree"
+import PortfolioItem from "./PortfolioItem"
 import Fade from "react-reveal/Fade"
 
 const styles = ({ breakpoints }) => ({
@@ -36,14 +36,12 @@ const Portfolio = ({ classes }) => {
     <>
       <div className={classes.title}>
         <Fade bottom>
-          <Typography variant="h5" align="center">
-            <b>OUR WORK</b>
+          <Typography variant="h4" align="center">
+            <b>Our Work</b>
           </Typography>
         </Fade>
       </div>
-      <AnimatedImageThree styles={classes.workOne} />
-      <AnimatedImageThree styles={classes.workTwo} />
-      <AnimatedImageThree styles={classes.workThree} />
+      <PortfolioItem />
     </>
   )
 }
