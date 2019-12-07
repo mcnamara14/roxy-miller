@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 
 const styles = {
   root: {
-    background: ({ fullWidthBgColor }) => fullWidthBgColor,
+    background: ({ fullWidthBackground }) => fullWidthBackground,
   },
   container: {
     maxWidth: 1200,

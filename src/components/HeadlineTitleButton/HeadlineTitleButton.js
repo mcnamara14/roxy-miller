@@ -1,8 +1,8 @@
 import React from "react"
 import withStyles from "@material-ui/core/styles/withStyles"
 import { Typography } from "@material-ui/core"
-import DashHeadline from "../DashHeadline/DashHeadline"
-import ButtonMediumBlack from "../buttons/ButtonMediumBlack"
+import DashHeadline from "src/components/DashHeadline/DashHeadline"
+import ButtonMediumBlack from "src/components/buttons/ButtonMediumBlack"
 
 const styles = ({ breakpoints }) => ({
   title: {

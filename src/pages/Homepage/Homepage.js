@@ -15,7 +15,7 @@ const Homepage = ({
   return (
     <Page>
       <SEO title="Home" />
-      <Layout fullWidthBgColor="linear-gradient(to bottom, #29a2ff 0%,#29a2ff 70%,#ffffff 30%)">
+      <Layout fullWidthBgColor="#29a2ff">
         <Hero title={title} />
       </Layout>
       <Layout>

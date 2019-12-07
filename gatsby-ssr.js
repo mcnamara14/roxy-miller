@@ -1,7 +1,9 @@
-/**
- * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/ssr-apis/
- */
+/* eslint-disable import/prefer-default-export, react/prop-types */
 
-// You can delete this file if you're not using it
+import React from "react"
+import App from "src/components/App/App"
+
+export const wrapRootElement = ({ element }) => {
+  console.log("element", element)
+  return <App>{element}</App>
+}

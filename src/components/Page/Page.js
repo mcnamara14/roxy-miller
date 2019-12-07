@@ -10,7 +10,7 @@ import Layout from "../Layout/Layout"
 
 const styles = theme => ({
   page: {
-    background: "white",
+    background: "#29A2FF",
     height: "100%",
     [theme.breakpoints.down("xs")]: {
       padding: "0 20px",
@@ -31,12 +31,10 @@ const Page = ({ children, classes }) => {
 
   return (
     <div className={classes.page}>
-      <ThemeProvider theme={theme}>
-        <Layout fullWidthBgColor="#29a2ff">
-          <Header />
-        </Layout>
-        {children}
-      </ThemeProvider>
+      <Layout fullWidthBackground="#29a2ff">
+        <Header />
+      </Layout>
+      {children}
     </div>
   )
 }

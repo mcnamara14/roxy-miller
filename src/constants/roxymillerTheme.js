@@ -7,6 +7,9 @@ const theme = createMuiTheme({
     dark: "#0069c0",
     contrastText: "#ffffff",
   },
+  secondary: {
+    main: "#FFF",
+  },
   buttons: {
     blackMedium: {
       maxWidth: 200,
@@ -24,6 +27,9 @@ const theme = createMuiTheme({
   },
   overrides: {
     MuiTypography: {
+      colorSecondary: {
+        color: "#fff",
+      },
       h1: {
         fontFamily: "Open Sans",
         fontSize: 40,
