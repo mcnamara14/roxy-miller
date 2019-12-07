@@ -1,6 +1,6 @@
-const createMuiTheme = require("@material-ui/core/styles").createMuiTheme
+import { createMuiTheme } from "@material-ui/core/styles"
 
-const styles = createMuiTheme({
+const theme = createMuiTheme({
   primary: {
     main: "#2196f3",
     light: "#6ec6ff",
@@ -53,4 +53,4 @@ const styles = createMuiTheme({
   },
 })
 
-module.exports = createMuiTheme(styles)
+export default theme
