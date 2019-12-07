@@ -6,7 +6,6 @@ import Fade from "react-reveal/Fade"
 const styles = theme => ({
   title: {
     margin: "160px 0 20px 0",
-    color: "#FFF",
     [theme.breakpoints.up("xs")]: {
       gridColumn: "1/13",
     },
@@ -28,7 +27,7 @@ const HeroTitle = ({ classes, title }) => {
   return (
     <Fade bottom>
       <div className={classes.title}>
-        <Typography variant="h1" color="secondary">
+        <Typography variant="h1" color="primary">
           {title}
         </Typography>
       </div>

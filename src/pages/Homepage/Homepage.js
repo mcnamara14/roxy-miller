@@ -5,7 +5,7 @@ import Hero from "src/components/Hero/Hero"
 import HeadlineTitleButton from "src/components/HeadlineTitleButton/HeadlineTitleButton"
 import SEO from "src/components/seo"
 import NewsCtasLayout from "src/components/layouts/NewsCtasLayout"
-import Layout from "../../components/Layout/Layout"
+import Layout from "src/components/Layout/Layout"
 
 const Homepage = ({
   data: {
@@ -15,7 +15,7 @@ const Homepage = ({
   return (
     <Page>
       <SEO title="Home" />
-      <Layout fullWidthBgColor="#29a2ff">
+      <Layout>
         <Hero title={title} />
       </Layout>
       <Layout>
