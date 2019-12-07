@@ -1,5 +1,5 @@
 const path = require("path")
-const roxyMillerTheme = require("./src/constants/roxyMillerTheme.js")
+const roxyMillerTheme = require("./src/constants/roxyMillerTheme")
 
 module.exports = {
   siteMetadata: {
