@@ -1,6 +1,7 @@
 import React from "react"
 import withStyles from "@material-ui/core/styles/withStyles"
 import PropTypes from "prop-types"
+import classNames from "classnames"
 
 const styles = {
   root: {
@@ -18,10 +19,11 @@ const styles = {
   },
 }
 
-const Layout = ({ children, classes }) => {
+const Layout = ({ children, classes, styles }) => {
+  console.log("styles", styles)
   return (
     <div className={classes.root}>
-      <div className={classes.container}>{children}</div>
+      <div className={classNames(styles, classes.container)}>{children}</div>
     </div>
   )
 }

@@ -4,16 +4,9 @@ import { Typography } from "@material-ui/core"
 import Fade from "react-reveal/Fade"
 
 const styles = ({ breakpoints }) => ({
-  root: {
-    gridColumn: "1/6",
-    [breakpoints.down("xs")]: {
-      gridColumn: "1/13",
-    },
-  },
   container: {
     gridTemplateColumns: "repeat(12, 1fr)",
     gridColumn: "1/13",
-    display: "grid",
   },
   image: {
     position: "relative",
@@ -135,11 +128,11 @@ const styles = ({ breakpoints }) => ({
   },
 })
 
-const AnimatedImageThree = ({ classes }) => {
+const AnimatedImageThree = ({ classes, styles }) => {
   return (
-    <Fade bottom>
-      <div className={classes.container}>
-        <div className={classes.root}>
+    <div className={styles}>
+      <Fade bottom>
+        <div className={classes.container}>
           <figure className={classes.effectChico}>
             <img
               src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
@@ -159,8 +152,8 @@ const AnimatedImageThree = ({ classes }) => {
             </figcaption>
           </figure>
         </div>
-      </div>
-    </Fade>
+      </Fade>
+    </div>
   )
 }
 
