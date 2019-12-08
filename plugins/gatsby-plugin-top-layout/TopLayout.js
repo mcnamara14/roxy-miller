@@ -5,7 +5,7 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 // Constants
 import { MuiThemeProvider } from "@material-ui/core/styles"
-import theme from "src/constants/roxymillerTheme"
+import theme from "src/constants/roxyMillerTheme"
 
 const TopLayout = ({ children }) => {
   return (
