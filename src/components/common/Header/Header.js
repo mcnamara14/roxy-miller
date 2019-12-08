@@ -1,5 +1,5 @@
 import React from "react"
-import headerLogo from "src/images/roxy-miller-header-logo.png"
+import headerLogo from "src/images/roxy-miller-header-logo.jpg"
 import withStyles from "@material-ui/core/styles/withStyles"
 import { Link } from "gatsby"
 
