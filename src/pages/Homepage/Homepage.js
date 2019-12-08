@@ -8,6 +8,7 @@ import SEO from "src/components/seo"
 import Layout from "src/components/Layout/Layout"
 import TitleServices from "src/composites/Homepage/TitleServices"
 import Portfolio from "src/composites/Homepage/Portfolio"
+import Testimonials from "src/composites/Homepage/Testimonials"
 
 const styles = {
   products: {
@@ -33,6 +34,9 @@ const Homepage = ({
       </Layout>
       <Layout>
         <Portfolio />
+      </Layout>
+      <Layout>
+        <Testimonials />
       </Layout>
     </Page>
   )

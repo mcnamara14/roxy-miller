@@ -34,6 +34,20 @@ const styles = ({ breakpoints }) => ({
       gridColumn: "1/13",
     },
   },
+  itemThree: {
+    marginTop: -40,
+    gridColumn: "2/7",
+    [breakpoints.down("sm")]: {
+      gridColumn: "1/13",
+    },
+  },
+  itemFour: {
+    marginTop: 100,
+    gridColumn: "7/12",
+    [breakpoints.down("sm")]: {
+      gridColumn: "1/13",
+    },
+  },
 })
 
 const Portfolio = ({ classes }) => {
@@ -55,6 +69,16 @@ const Portfolio = ({ classes }) => {
         <PortfolioItem
           classes={{ root: classes.itemTwo }}
           image={imageTwo}
+          fadeRight={true}
+        />
+        <PortfolioItem
+          classes={{ root: classes.itemThree }}
+          image={imageTwo}
+          fadeLeft={true}
+        />
+        <PortfolioItem
+          classes={{ root: classes.itemFour }}
+          image={imageOne}
           fadeRight={true}
         />
       </div>
