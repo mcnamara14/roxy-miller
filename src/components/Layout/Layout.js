@@ -17,6 +17,9 @@ const styles = theme => {
       display: "grid",
       margin: `0 auto`,
       padding: "0 50px",
+      [theme.breakpoints.only("xs")]: {
+        padding: 0,
+      },
     },
   }
 }
