@@ -8,6 +8,9 @@ const styles = theme => ({
     gridTemplateColumns: "repeat(12, 1fr)",
     display: "grid",
     gridColumn: "1/13",
+    [theme.breakpoints.only("xs")]: {
+      gridColumn: "2/12",
+    },
   },
   title: {
     gridColumn: "1/6",
@@ -31,15 +34,29 @@ const styles = theme => ({
     gridColumn: "1/5",
     alignSelf: "end",
     color: "white",
+    [theme.breakpoints.only("xs")]: {
+      gridColumn: "1/13",
+      marginTop: 30,
+    },
   },
   links: {
     gridColumn: "5/13",
     display: "grid",
     columnGap: 40,
+    [theme.breakpoints.only("xs")]: {
+      display: "block",
+      gridColumn: "1/13",
+    },
   },
   leftLinks: {
     gridColumn: "8/10",
     justifySelf: "end",
+    marginTop: 80,
+    [theme.breakpoints.only("xs")]: {
+      "& ul": {
+        padding: 0,
+      },
+    },
   },
   rightLinks: {
     gridColumn: "10/13",
