@@ -24,7 +24,7 @@ const styles = theme => {
 const Layout = ({ children, classes, styles }) => {
   return (
     <div className={classes.root}>
-      <div className={classNames(styles, classes.container)}>{children}</div>
+      <div className={classNames(classes.container, styles)}>{children}</div>
     </div>
   )
 }
