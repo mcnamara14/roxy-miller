@@ -10,7 +10,7 @@ const styles = theme => ({
     gridColumn: "1/13",
   },
   title: {
-    gridColumn: "2/6",
+    gridColumn: "1/6",
     fontSize: 54,
     fontWeight: 700,
     color: "white",
@@ -24,16 +24,16 @@ const styles = theme => ({
     color: "white",
   },
   link: {
-    gridColumn: "2/6",
+    gridColumn: "1/6",
     textDecoration: "none",
   },
   address: {
-    gridColumn: "2/5",
+    gridColumn: "1/5",
     alignSelf: "end",
     color: "white",
   },
   links: {
-    gridColumn: "5/12",
+    gridColumn: "5/13",
     display: "grid",
     columnGap: 40,
   },
@@ -42,7 +42,7 @@ const styles = theme => ({
     justifySelf: "end",
   },
   rightLinks: {
-    gridColumn: "10/12",
+    gridColumn: "10/13",
   },
   navLink: {
     color: "white",
