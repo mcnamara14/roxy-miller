@@ -5,7 +5,7 @@ import Fade from "react-reveal/Fade"
 import TrackVisibility from "react-on-screen"
 import Counter from "src/composites/Homepage/Counter"
 
-const styles = ({ breakpoints }) => ({
+const styles = {
   testimonial: {
     gridColumn: "1/8",
     marginTop: 140,
@@ -15,19 +15,20 @@ const styles = ({ breakpoints }) => ({
     gridColumn: "1/8",
     color: "black",
     textDecoration: "none",
+    marginBottom: 40,
   },
   linkText: {
     width: "fit-content",
     borderBottom: "1px dotted black",
-    marginTop: 80,
+    marginTop: -80,
   },
   counter: {
-    gridColumn: "10/13",
+    gridColumn: "11/13",
     gridRow: "1",
     alignSelf: "center",
-    marginTop: 60,
+    marginTop: 150,
   },
-})
+}
 
 const Testimonials = ({ classes }) => {
   return (

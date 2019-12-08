@@ -5,12 +5,12 @@ import { Typography } from "@material-ui/core"
 
 const styles = ({ breakpoints }) => ({
   counter: {
-    fontWeight: 700,
-    fontSize: 50,
-    fontFamily: "Open Sans",
+    fontWeight: 900,
+    fontSize: 70,
+    fontFamily: "Montserrat",
   },
   text: {
-    marginTop: 5,
+    margin: "-10px 0 60px 0",
     fontWeight: 300,
   },
 })
@@ -33,8 +33,23 @@ const Counter = ({ classes, isVisible }) => {
             </div>
           )}
         </CountUp>
-        <Typography variant="h5" className={classes.text}>
-          Happy Clients
+        <Typography variant="h6" className={classes.text}>
+          development <br /> projects
+        </Typography>
+        <CountUp
+          start={0}
+          end={18}
+          delay={0}
+          onStart={() => updateStarted(true)}
+        >
+          {({ countUpRef }) => (
+            <div>
+              <span ref={countUpRef} className={classes.counter} />
+            </div>
+          )}
+        </CountUp>
+        <Typography variant="h6" className={classes.text}>
+          website & logo <br /> design clients
         </Typography>
       </>
     )
