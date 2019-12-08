@@ -51,8 +51,8 @@ const styles = theme => ({
   leftLinks: {
     gridColumn: "8/10",
     justifySelf: "end",
-    marginTop: 80,
     [theme.breakpoints.only("xs")]: {
+      marginTop: 80,
       "& ul": {
         padding: 0,
       },
