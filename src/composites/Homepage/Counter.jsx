@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { withStyles } from "@material-ui/core/styles"
 import CountUp from "react-countup"
 import { Typography } from "@material-ui/core"
@@ -16,14 +16,17 @@ const styles = ({ breakpoints }) => ({
 })
 
 const Counter = ({ classes, isVisible }) => {
-  const startCounter = () => {
-    console.log("start")
-  }
+  const [hasStarted, updateStarted] = useState(false)
 
-  if (isVisible) {
+  if (isVisible || hasStarted) {
     return (
       <>
-        <CountUp start={0} end={31} delay={0}>
+        <CountUp
+          start={0}
+          end={31}
+          delay={0}
+          onStart={() => updateStarted(true)}
+        >
           {({ countUpRef }) => (
             <div>
               <span ref={countUpRef} className={classes.counter} />
