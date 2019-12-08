@@ -7,9 +7,16 @@ const styles = theme => ({
   logoLink: {
     gridColumn: "1/3",
     alignSelf: "center",
+    [theme.breakpoints.down("sm")]: {
+      marginTop: 20,
+    },
   },
   logo: {
     width: 190,
+  },
+  list: {
+    paddingBottom: 5,
+    display: "inline-block",
   },
   nav: {
     gridColumn: "3/13",
@@ -70,15 +77,49 @@ const Header = ({ classes }) => {
       <nav className={classes.nav}>
         <ul className={classes.navRoot}>
           <li>
-            <Link to="/page-2" activeStyle={{ color: "darkslategray" }}>
+            <Link
+              to="/page-2"
+              activeStyle={{ color: "darkslategray" }}
+              className={classes.list}
+            >
               Our Work
             </Link>
           </li>
-          <li>What We Do</li>
-          <li>About</li>
-          <li>News</li>
           <li>
-            <Link to="/contact/">Contact</Link>
+            <Link
+              to="#"
+              activeStyle={{ color: "darkslategray" }}
+              className={classes.list}
+            >
+              What We Do
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="#"
+              activeStyle={{ color: "darkslategray" }}
+              className={classes.list}
+            >
+              About
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="#"
+              activeStyle={{ color: "darkslategray" }}
+              className={classes.list}
+            >
+              News
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="#"
+              activeStyle={{ color: "darkslategray" }}
+              className={classes.list}
+            >
+              Contact
+            </Link>
           </li>
         </ul>
       </nav>
