@@ -4,8 +4,6 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "src/components/common/Header/Header"
 import "./page.css"
-import { ThemeProvider } from "@material-ui/styles"
-import theme from "src/constants/roxymillerTheme"
 import Layout from "../Layout/Layout"
 
 const styles = theme => ({
