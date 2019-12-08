@@ -5,14 +5,21 @@ import Fade from "react-reveal/Fade"
 import TrackVisibility from "react-on-screen"
 import Counter from "src/composites/Homepage/Counter"
 
-const styles = {
+const styles = theme => ({
   testimonialContainer: {
     gridColumn: "1/8",
     marginTop: 140,
     display: "grid",
+    [theme.breakpoints.only("xs")]: {
+      gridColumn: "2/12",
+      marginTop: 40,
+    },
   },
   testimonial: {
     fontWeight: 300,
+    [theme.breakpoints.only("xs")]: {
+      fontSize: 24,
+    },
   },
   link: {
     gridColumn: "1/8",
@@ -32,8 +39,12 @@ const styles = {
     gridRow: "1",
     alignSelf: "center",
     marginTop: 150,
+    [theme.breakpoints.only("xs")]: {
+      gridColumn: "2/12",
+      marginTop: 50,
+    },
   },
-}
+})
 
 const Testimonials = ({ classes }) => {
   return (

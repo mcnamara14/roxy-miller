@@ -8,6 +8,7 @@ const styles = theme => ({
     margin: "160px 0 20px 0",
     [theme.breakpoints.up("xs")]: {
       gridColumn: "1/13",
+      marginTop: 80,
     },
     [theme.breakpoints.up("sm")]: {
       gridColumn: "1/11",

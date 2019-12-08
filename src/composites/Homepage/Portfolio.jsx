@@ -25,27 +25,32 @@ const styles = ({ breakpoints }) => ({
   itemOne: {
     gridColumn: "2/7",
     [breakpoints.down("sm")]: {
-      gridColumn: "1/13",
+      gridColumn: "2/12",
+      marginBottom: 60,
     },
   },
   itemTwo: {
     gridColumn: "7/12",
     [breakpoints.down("sm")]: {
-      gridColumn: "1/13",
+      gridColumn: "2/12",
+      marginBottom: 60,
     },
   },
   itemThree: {
     marginTop: -40,
     gridColumn: "2/7",
     [breakpoints.down("sm")]: {
-      gridColumn: "1/13",
+      gridColumn: "2/12",
+      marginTop: 0,
+      marginBottom: 60,
     },
   },
   itemFour: {
     marginTop: 100,
     gridColumn: "7/12",
     [breakpoints.down("sm")]: {
-      gridColumn: "1/13",
+      gridColumn: "2/12",
+      marginBottom: 60,
     },
   },
 })
