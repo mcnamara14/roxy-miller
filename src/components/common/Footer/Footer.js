@@ -8,7 +8,6 @@ const styles = theme => ({
     gridTemplateColumns: "repeat(12, 1fr)",
     display: "grid",
     gridColumn: "1/13",
-    background: "#22384e",
   },
   title: {
     gridColumn: "2/6",

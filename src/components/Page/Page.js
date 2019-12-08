@@ -36,7 +36,7 @@ const Page = ({ children, classes }) => {
         <Header />
       </Layout>
       {children}
-      <Layout styles={classes.footer}>
+      <Layout styles={classes.footer} fullWidthBackground="#22384e">
         <Footer />
       </Layout>
     </div>
