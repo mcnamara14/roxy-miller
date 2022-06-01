@@ -32,7 +32,7 @@
     "react-jss": "^8.6.1",
     "react-on-screen": "^2.1.1",
     "react-reveal": "^1.2.2",
-    "sharp": "^0.23.3",
+    "sharp": "^0.30.5",
     "styled-components": "^4.4.1"
   },
   "devDependencies": {
